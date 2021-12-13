@@ -16,7 +16,6 @@ create table if not exists track (
 	id serial primary key, 
 	track_name varchar(40) not null,
 	duration numeric (6),
-	id_executor integer references executor(id),
 	id_album integer references album(id)
 );
 
